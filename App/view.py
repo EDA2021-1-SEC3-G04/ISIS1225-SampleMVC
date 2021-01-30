@@ -37,6 +37,7 @@ se hace la solicitud al controlador para ejecutar la
 operación solicitada
 """
 
+"""Hola!!"""
 
 def printMenu():
     print("Opciones:")
@@ -44,6 +45,7 @@ def printMenu():
     print("2- Cargar Tags")
     # TO-DO: Modificaciones para completar el laboratorio 1.
     print("0- Salir")
+    print(":)")
 
 
 def loadBooks():
