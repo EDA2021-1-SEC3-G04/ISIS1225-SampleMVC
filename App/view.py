@@ -37,15 +37,15 @@ se hace la solicitud al controlador para ejecutar la
 operación solicitada
 """
 
-"""Hola!!"""
+
 
 def printMenu():
     print("Opciones:")
     print("1- Cargar Libros")
     print("2- Cargar Tags")
-    # TO-DO: Modificaciones para completar el laboratorio 1.
+    print("3- Cargar Libros Tags")
     print("0- Salir")
-    print(":)")
+    
 
 
 def loadBooks():
@@ -60,6 +60,9 @@ def loadTags():
     Carga los Tags
     """
     return controller.loadTags('GoodReads/tags.csv')
+
+def loadBookTags(): 
+    return controller.loadBooksTags('GoodReads/book_tags-samll.csv')
 
 
 """
@@ -77,7 +80,12 @@ while True:
         print("Cargando información de tags....")
         tags = loadTags()
         print('Total de tags cargados: ' + str(lt.size(tags)))
-    # TO-DO: Modificaciones para completar el laboratorio 1.
+    
+    elif int(input[0]) ==3: 
+        print("Cargando información de libros tags...")
+        books_tags = loadBookTags()
+        print("Total de libros tags cargados: " + str(lt.size(books_tags)))
+    
 
     else:
         sys.exit(0)
