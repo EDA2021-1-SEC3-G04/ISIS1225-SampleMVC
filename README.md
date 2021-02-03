@@ -3,6 +3,7 @@
 ### Nombres
 
 Valentina Calderon vcalderonm@uniandes.edu.co 202020771
+
 Maria Castro m.castroi@uniandes.edu.co 202020850
 
 Este proyecto busca mostrar una posible forma de organizar el código que se va a desarrollar en los proyectos del curso.

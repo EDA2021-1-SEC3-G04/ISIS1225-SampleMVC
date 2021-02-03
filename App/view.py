@@ -38,14 +38,12 @@ operación solicitada
 """
 
 
-
 def printMenu():
     print("Opciones:")
     print("1- Cargar Libros")
     print("2- Cargar Tags")
     print("3- Cargar Libros Tags")
     print("0- Salir")
-    
 
 
 def loadBooks():
@@ -61,7 +59,8 @@ def loadTags():
     """
     return controller.loadTags('GoodReads/tags.csv')
 
-def loadBookTags(): 
+
+def loadBookTags():
     return controller.loadBooksTags('GoodReads/book_tags-samll.csv')
 
 
@@ -80,12 +79,11 @@ while True:
         print("Cargando información de tags....")
         tags = loadTags()
         print('Total de tags cargados: ' + str(lt.size(tags)))
-    
-    elif int(input[0]) ==3: 
+
+    elif int(inputs[0]) == 3:
         print("Cargando información de libros tags...")
         books_tags = loadBookTags()
-        print("Total de libros tags cargados: " + str(lt.size(books_tags)))
-    
+        print("Total de libros tags cargados: ")
 
     else:
         sys.exit(0)
